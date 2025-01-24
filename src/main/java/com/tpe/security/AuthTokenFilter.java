@@ -1,11 +1,14 @@
 package com.tpe.security;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.util.AntPathMatcher;
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 
@@ -15,11 +18,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@RequiredArgsConstructor
+@AllArgsConstructor
+@NoArgsConstructor
 public class AuthTokenFilter extends OncePerRequestFilter {
 
-    private final JwtUtils jwtUtils;
-    private final UserDetailsService userDetailsService;
+    private JwtUtils jwtUtils;
+    private UserDetailsService userDetailsService;
 
     @Override
     protected void doFilterInternal(HttpServletRequest request,
@@ -50,5 +54,13 @@ public class AuthTokenFilter extends OncePerRequestFilter {
             return header.substring(7);
         }
         return null;
+    }
+
+    @Override
+    protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
+        AntPathMatcher antPathMatcher = new AntPathMatcher();
+
+        return antPathMatcher.match("/register", request.getServletPath()) ||
+                antPathMatcher.match("/login", request.getServletPath());
     }
 }
