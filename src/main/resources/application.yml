@@ -8,8 +8,8 @@ server:
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/jwt_dt
-    username: techprodt
-    password: password
+    username: dev_user
+    password: dev_user
   jpa:
     show_sql: true
     hibernate:

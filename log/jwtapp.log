@@ -1,0 +1,127 @@
+2025-01-24 21:25:47,485 INFO  [main] com.tpe.SpringJwtProjectApplication:Starting SpringJwtProjectApplication using Java 17.0.13 on DESKTOP-3MR30VF with PID 8988 (C:\Users\tkmga\IdeaProjects\SpringJwtProject\target\classes started by ismail in C:\Users\tkmga\IdeaProjects\SpringJwtProject)
+2025-01-24 21:25:47,488 INFO  [main] com.tpe.SpringJwtProjectApplication:No active profile set, falling back to default profiles: default
+2025-01-24 21:25:49,459 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-24 21:25:49,510 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 31 ms. Found 0 JPA repository interfaces.
+2025-01-24 21:25:51,134 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2025-01-24 21:25:51,158 INFO  [main] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2025-01-24 21:25:51,159 INFO  [main] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2025-01-24 21:25:51,365 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2025-01-24 21:25:51,366 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 3745 ms
+2025-01-24 21:25:51,425 ERROR [main] org.springframework.boot.web.embedded.tomcat.TomcatStarter:Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'webSecurityConfig' defined in file [C:\Users\tkmga\IdeaProjects\SpringJwtProject\target\classes\com\tpe\security\config\WebSecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.core.userdetails.UserDetailsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-01-24 21:25:51,473 INFO  [main] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+2025-01-24 21:25:51,500 WARN  [main] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2025-01-24 21:25:51,522 INFO  [main] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-01-24 21:25:51,560 ERROR [main] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.tpe.security.config.WebSecurityConfig required a bean of type 'org.springframework.security.core.userdetails.UserDetailsService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.core.userdetails.UserDetailsService' in your configuration.
+
+2025-01-24 21:26:43,572 INFO  [main] com.tpe.SpringJwtProjectApplication:Starting SpringJwtProjectApplication using Java 17.0.13 on DESKTOP-3MR30VF with PID 8492 (C:\Users\tkmga\IdeaProjects\SpringJwtProject\target\classes started by ismail in C:\Users\tkmga\IdeaProjects\SpringJwtProject)
+2025-01-24 21:26:43,576 INFO  [main] com.tpe.SpringJwtProjectApplication:No active profile set, falling back to default profiles: default
+2025-01-24 21:26:45,182 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-24 21:26:45,223 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 24 ms. Found 0 JPA repository interfaces.
+2025-01-24 21:26:46,516 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2025-01-24 21:26:46,535 INFO  [main] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2025-01-24 21:26:46,535 INFO  [main] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2025-01-24 21:26:46,701 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2025-01-24 21:26:46,702 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 3017 ms
+2025-01-24 21:26:46,775 ERROR [main] org.springframework.boot.web.embedded.tomcat.TomcatStarter:Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'webSecurityConfig' defined in file [C:\Users\tkmga\IdeaProjects\SpringJwtProject\target\classes\com\tpe\security\config\WebSecurityConfig.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDetailsServiceImpl' defined in file [C:\Users\tkmga\IdeaProjects\SpringJwtProject\target\classes\com\tpe\security\service\UserDetailsServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.tpe.repository.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-01-24 21:26:46,837 INFO  [main] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+2025-01-24 21:26:46,856 WARN  [main] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+2025-01-24 21:26:46,879 INFO  [main] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-01-24 21:26:46,928 ERROR [main] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.tpe.security.service.UserDetailsServiceImpl required a bean of type 'com.tpe.repository.UserRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.tpe.repository.UserRepository' in your configuration.
+
+2025-01-24 21:27:38,960 INFO  [main] com.tpe.SpringJwtProjectApplication:Starting SpringJwtProjectApplication using Java 17.0.13 on DESKTOP-3MR30VF with PID 5892 (C:\Users\tkmga\IdeaProjects\SpringJwtProject\target\classes started by ismail in C:\Users\tkmga\IdeaProjects\SpringJwtProject)
+2025-01-24 21:27:38,964 INFO  [main] com.tpe.SpringJwtProjectApplication:No active profile set, falling back to default profiles: default
+2025-01-24 21:27:40,428 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-24 21:27:40,545 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 100 ms. Found 1 JPA repository interfaces.
+2025-01-24 21:27:41,905 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2025-01-24 21:27:41,926 INFO  [main] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2025-01-24 21:27:41,927 INFO  [main] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2025-01-24 21:27:42,093 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2025-01-24 21:27:42,094 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 3041 ms
+2025-01-24 21:27:42,491 INFO  [main] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-24 21:27:42,611 INFO  [main] org.hibernate.Version:HHH000412: Hibernate ORM core version 5.6.4.Final
+2025-01-24 21:27:43,019 INFO  [main] org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-01-24 21:27:43,239 INFO  [main] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Starting...
+2025-01-24 21:27:43,689 INFO  [main] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Start completed.
+2025-01-24 21:27:43,741 INFO  [main] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2025-01-24 21:27:45,210 WARN  [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper:SQL Warning Code: 0, SQLState: 00000
+2025-01-24 21:27:45,211 WARN  [main] org.hibernate.engine.jdbc.spi.SqlExceptionHelper:constraint "uk_b5q5wl2w4kiod1gyimirwmfse" of relation "t_user" does not exist, skipping
+2025-01-24 21:27:45,222 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-24 21:27:45,233 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-24 21:27:45,985 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-24 21:27:46,180 WARN  [main] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userJWTController' defined in file [C:\Users\tkmga\IdeaProjects\SpringJwtProject\target\classes\com\tpe\controller\UserJWTController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService' defined in file [C:\Users\tkmga\IdeaProjects\SpringJwtProject\target\classes\com\tpe\service\UserService.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.tpe.repository.RoleRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-01-24 21:27:46,182 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-24 21:27:46,250 INFO  [main] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
+2025-01-24 21:27:46,294 INFO  [main] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
+2025-01-24 21:27:46,298 INFO  [main] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+2025-01-24 21:27:46,359 INFO  [main] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-01-24 21:27:46,404 ERROR [main] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.tpe.service.UserService required a bean of type 'com.tpe.repository.RoleRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.tpe.repository.RoleRepository' in your configuration.
+
+2025-01-24 21:28:36,783 INFO  [main] com.tpe.SpringJwtProjectApplication:Starting SpringJwtProjectApplication using Java 17.0.13 on DESKTOP-3MR30VF with PID 11708 (C:\Users\tkmga\IdeaProjects\SpringJwtProject\target\classes started by ismail in C:\Users\tkmga\IdeaProjects\SpringJwtProject)
+2025-01-24 21:28:36,787 INFO  [main] com.tpe.SpringJwtProjectApplication:No active profile set, falling back to default profiles: default
+2025-01-24 21:28:38,438 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-24 21:28:38,560 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 107 ms. Found 2 JPA repository interfaces.
+2025-01-24 21:28:39,990 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8080 (http)
+2025-01-24 21:28:40,025 INFO  [main] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2025-01-24 21:28:40,026 INFO  [main] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.56]
+2025-01-24 21:28:40,271 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2025-01-24 21:28:40,272 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 3381 ms
+2025-01-24 21:28:40,653 INFO  [main] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-24 21:28:40,823 INFO  [main] org.hibernate.Version:HHH000412: Hibernate ORM core version 5.6.4.Final
+2025-01-24 21:28:41,409 INFO  [main] org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-01-24 21:28:41,721 INFO  [main] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Starting...
+2025-01-24 21:28:42,134 INFO  [main] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Start completed.
+2025-01-24 21:28:42,166 INFO  [main] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2025-01-24 21:28:43,686 INFO  [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-01-24 21:28:43,700 INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-24 21:28:44,362 WARN  [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-24 21:28:44,831 INFO  [main] org.springframework.security.web.DefaultSecurityFilterChain:Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@42fa5cb, org.springframework.security.web.context.SecurityContextPersistenceFilter@4c614d8c, org.springframework.security.web.header.HeaderWriterFilter@691eb389, org.springframework.security.web.authentication.logout.LogoutFilter@67fd2e17, com.tpe.security.AuthTokenFilter@3de383f7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3980b44f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@233ece92, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ae87e38, org.springframework.security.web.session.SessionManagementFilter@2626aa35, org.springframework.security.web.access.ExceptionTranslationFilter@e1fd2bf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@51aa2a58]
+2025-01-24 21:28:45,554 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8080 (http) with context path ''
+2025-01-24 21:28:45,568 INFO  [main] com.tpe.SpringJwtProjectApplication:Started SpringJwtProjectApplication in 9.679 seconds (JVM running for 10.469)
+2025-01-24 21:30:01,984 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-24 21:30:01,989 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
+2025-01-24 21:30:02,017 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
